@@ -228,3 +228,4 @@ print(Mat1.dot(Mat2)) # realiza a multiplicação das matrizes
 ## Assim,vamos usar o arquivo "TinyNumpyBase.py" como base para embarcar (https://github.com/eldereng/MaratonaProgramacao2020-Matriz/)
 ## Mostrar como embardar o numpy, basicamente incluir seu código dentro de "def mainCode():", testar e enviar o arquivo no URI...
 ## Veja o arquivo "TinyNumpyExample.py", nele mostramos as operações acima sem usar a biblioteca numpy.
+##    python TinyNumpyExample.py
