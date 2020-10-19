@@ -51,7 +51,7 @@
 
 	- Mostrar como usar o uDebug.bat para medir o tempo de execução do código
 
-- Introdução:
+- Conteúdo:
 
 	- [Lists](https://towardsdatascience.com/python-basics-6-lists-and-list-manipulation-a56be62b1f95)
 	
@@ -93,6 +93,14 @@
 			- Falar dos problemas:
 				- Tamanho do arquivo (max 100KB, TinyNumpy tem 40KB)
 				- Tempo de processamento (Slow)
+
+*********
+
+- 👨‍🏫 Aula: 1187, 1557, 1827, 2450 (TinyNumpy), 2450 (funcional)
+
+*********
+
+- 🏆 Torneio: 1181, 1182, 1183, 1184, 1185, 1186, 1188, 1189, 1190, 1383, 1435, 1478, 1534, 1578, 1868, 2471, 2542, 2875, 3087
 
 *********
 
