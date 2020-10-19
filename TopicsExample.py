@@ -204,6 +204,9 @@ print(L1[0:1:, :: ].sum())    # imprime a soma dos elementos da primeira linha
 print(L1[0:2:, :: ].sum())    # imprime a soma dos elementos da primeira e segunda linha
 
 
+# ZIP => aggregate elements from two or more iterables => TWO range:
+for ii, jj in zip(range(0,5), range(5,0,-1)): 
+    print(ii, jj)
 print(L1)
 for ii, jj in zip(range(0,L1.shape[0]), range(L1.shape[1],0,-1)): # pega os elementos acima da diagnomal secundária (incluindo eles)
     print(L1[ii, 0:jj])
