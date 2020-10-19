@@ -5,9 +5,9 @@ print(L1) # Imprime todos os elementos da lista
 L1=list(range(5,8+1)) # Forma condensada para fazer o que foi feito acima
 print(L1) # Imprime todos os elementos da lista
 L1=[5,6,7,8]     # Definindo manualmente a mesma lista acima
-print(L1[0],L1[1],L1[2],L1[3]) # Imprime elemento a elemento
 print(L1.index(5), L1.index(6), L1.index(7), L1.index(8)) # Retorna o indice de um dado elemento
 print(L1.index(15)) # Erro pois o L1 não tem o elemento 15.
+print(L1[0],L1[1],L1[2],L1[3]) # Imprime elemento a elemento
 for d in L1: print(d) # Imprime todos os elementos (igual acima)
 for ii,d in enumerate(L1): print(ii,d) # Imprime todos os elementos com o indice deles
 for ii in range(len(L1)): print(ii,L1[ii]) # Imprime todos os elementos com o indice deles
