@@ -92,14 +92,16 @@ for ii in range(5,8+1): L1.append(ii) # faz um loop de 5 a 8 e inclui cada n° n
 print(L1)
 L1=[ii for ii in range(5,8+1)] # Escrevendo o for Loop na forma comprimida
 print(L1)
+L1=list(range(5,8+1)) # mais comprimido ainda
+print(L1)
 
 print(" ".join(L1)) #Erro: Os elementos da lista tem que ser string (caracteres)
-L1=[str(ii) for ii in range(5,8+1)] # Vamos converter usando compresao
+L1=[str(ii) for ii in range(5,8+1)] # Vamos converter usando compressao
 print(L1)
 print(" ".join(L1)) # Imprime todos os elementos
 
 L1=[ii for ii in range(5,8+1)] # Escrevendo o for Loop na forma comprimida
-print(list(map(str,L1))) # Vamos converter usando map e imprimir tudo (sem usar Loop for)
+print(list(map(str,L1))) # ou podemos converter usando map e imprimir tudo (sem usar Loop for)
 
 
 
@@ -139,10 +141,10 @@ for ii in range(5): # Criando um vetor 2D (5 x 5), com tudo Zero
 print(L1)
 L1=[[0]*5 for ii in range(5)] # Criando um vetor 2D (5 x 5), com tudo Zero (forma condensada)
 print(L1)
-print(L1[4][4]) # acessando a última posição do vetor, usando os indices de linha e coluna
+print(L1[4][4]) # acessando a última posição do vetor, usando os indices de linha e coluna (4 e 4)
 for linha in L1: # imprimindo cada elemento do vetor 2D
     for elemento in linha:
-        print(elemento, "",end="", sep=" ")
+        print(elemento, "",end="", sep=" ") # explicar que no final de cada linha terá um espaço extra....
     print("")
 L1=[] # Criando uma lista vazia para nosso vertor 2D
 for ii in range(5): # Criando um vetor 2D (5 x 5), com numeros sequenciais
@@ -169,6 +171,7 @@ print(type(L1))  # verifica o tipo de dados da variável L1 <class 'numpy.ndarra
 print(L1) # Imprime os elementos da lista
 L1=L1.reshape((5,5)) # Criando um vetor 2D (5 x 5), com numeros sequenciais (igual fizemos no tópico anterior, mas bem mais simples)
 print(L1) # Imprime a matriz 2D (5 x 5)
+print(L1.shape) # imprime a qtde de linhas e colunas da matriz
 # Slice com numpy L1[ Linha, Coluna ] onde:
 #                      Linha = Inicio:Fim:Passo
 #                      Colune= Inicio:Fim:Passo
@@ -199,6 +202,13 @@ print(L1[::2, 0:2: ])   # imprime os elementos da primeira e segunda coluna de d
 print(L1[1:4:, 1:4: ])  # imprime os elementos internos (descarta a primera e a última linha, a primera e a última coluna) 
 print(L1[0:1:, :: ].sum())    # imprime a soma dos elementos da primeira linha
 print(L1[0:2:, :: ].sum())    # imprime a soma dos elementos da primeira e segunda linha
+
+
+print(L1)
+for ii, jj in zip(range(0,L1.shape[0]), range(L1.shape[1],0,-1)): # pega os elementos acima da diagnomal secundária (incluindo eles)
+    print(L1[ii, 0:jj])
+
+
 print([L1[ii,ii] for ii in range(5)]) # Imprime os elementos da diagonal principal
 
 L1[1:4:, 1:4: ]=0  # coloca ZERO nos elementos internos 
