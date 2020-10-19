@@ -103,7 +103,8 @@
 
 *********
 
-- 🏆 Torneio (p/ casa): 1181, 1182, 1183, 1184, 1185, 1186, 1188, 1189, 1190, 1383, 1435, 1478, 1534, 1578, 1868, 2471, 2542, 2875, 3087
+- 🏆 Torneio (p/ casa): https://www.urionlinejudge.com.br/judge/pt/tournaments/rank/4253 
+	- Senha: agor@va1
 
 *********
 
