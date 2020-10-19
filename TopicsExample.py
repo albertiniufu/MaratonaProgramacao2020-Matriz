@@ -40,6 +40,7 @@ print(Data[5::])    # imprime todos os elementos com indice >= 5
 print(Data[-5::])   # imprime os últimos 5 elementos na ordem q aparecem
 
 
+
 ## Function
 def GreatThanZeroV1(Value): # Defini uma função
     return Value > 0
@@ -54,6 +55,7 @@ for ii in range(len(Data)):
     GreatThanZeroV2(Data[ii]) # Imprime TRUE ou FALSE para cada elemento da lista
 for d in Data:
     GreatThanZeroV2(d) # Imprime TRUE ou FALSE para cada elemento da lista
+
 
 
 ## Lambda (é uma função anônima)
@@ -203,7 +205,6 @@ print(L1[1:4:, 1:4: ])  # imprime os elementos internos (descarta a primera e a 
 print(L1[0:1:, :: ].sum())    # imprime a soma dos elementos da primeira linha
 print(L1[0:2:, :: ].sum())    # imprime a soma dos elementos da primeira e segunda linha
 
-
 # ZIP => aggregate elements from two or more iterables => TWO range:
 for ii, jj in zip(range(0,5), range(5,0,-1)): 
     print(ii, jj)
@@ -211,9 +212,7 @@ print(L1)
 for ii, jj in zip(range(0,L1.shape[0]), range(L1.shape[1],0,-1)): # pega os elementos acima da diagnomal secundária (incluindo eles)
     print(L1[ii, 0:jj])
 
-
-print([L1[ii,ii] for ii in range(5)]) # Imprime os elementos da diagonal principal
-
+#Alterando valores da matriz usando Slice
 L1[1:4:, 1:4: ]=0  # coloca ZERO nos elementos internos 
 print(L1)
 
