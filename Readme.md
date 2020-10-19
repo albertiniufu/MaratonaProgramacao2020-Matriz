@@ -51,6 +51,8 @@
 
 	- Mostrar como usar o uDebug.bat para medir o tempo de execução do código
 
+		- Exemplo 1004
+
 - Conteúdo:
 	- Veja um sumário dos códigos/conteúdo no arquivo "TopicsExample.py"
 
