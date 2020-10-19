@@ -1,4 +1,4 @@
-# :blue_book::green_book::notebook: Roteiro p/ Imersão 
+# :blue_book::green_book::notebook: Roteiro p/ Imersão - Iniciantes
 
 
 ### Maratona de Programação - Fase I de 2020
